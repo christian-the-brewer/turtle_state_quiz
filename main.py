@@ -1,5 +1,6 @@
 import turtle
 import pandas as pd
+from state import State
 
 data = pd.read_csv("50_states.csv")
 states = data.state.to_list()

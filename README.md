@@ -1,6 +1,6 @@
 # USA State Guessing Game
 
-A state game using turtle graphics and pandas
+A state guessing game using turtle graphics and pandas
 
 ## Authors
 

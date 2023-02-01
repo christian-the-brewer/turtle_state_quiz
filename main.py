@@ -31,10 +31,12 @@ while len(states_guessed) < 50 and game:
             new_state = State(
                 (int(state_data.x), int(state_data.y)), answer_state)
 
-missing_states = []
-for state in states:
-    if state not in states_guessed:
-        missing_states.append(state)
+# missing_states = []
+# for state in states:
+#     if state not in states_guessed:
+#         missing_states.append(state)
+
+missing_states = [state for state in states if state not in states_guessed]
 
 missed_states = pd.DataFrame(missing_states)
 missed_states.to_csv("missed_states.csv")
